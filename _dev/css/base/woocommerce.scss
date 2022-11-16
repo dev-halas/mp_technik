@@ -1,0 +1,139 @@
+.wooWrapper {
+    padding: 10vh 0;
+    @include responsive('tablet') {
+        padding: 5vh 0;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.woocommerce-product-gallery__trigger{   
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    right: 0;
+    top: 0;
+    background: transparent;
+}
+
+.shopWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.shopSidebar {
+    grid-column: span 1;
+}
+
+.shopProducts {
+    grid-column: span 3;
+}
+
+.shopProducts--wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    gap: 15px;
+}
+
+.shopProducts--item {
+    grid-column: span 2;
+    background-color: $white;
+    position: relative;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: clamp(18px, 1.2vw, 28px);
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .shopProducts--details {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: MAX(10px, 1vw);
+    }
+}
+
+.shopProducts--detailsMore {
+    margin-top: auto;
+}
+
+.addToCart--button {
+    background-color: $blue;
+    color: $white;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+.shopPrice--netto {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.shopPrice--brutto {
+    color: $blue;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.productSale {
+    position: absolute;
+    z-index: 10;
+    right: -5px;
+    top: -5px;
+    background-color: $dark;
+    color: $white;
+    padding: 3px 12px;
+    border-radius: 0 0 0 16px;
+    -webkit-border-radius: 0 0 0 16px;
+    -moz-border-radius: 0 0 0 16px;
+    -ms-border-radius: 0 0 0 16px;
+    -o-border-radius: 0 0 0 16px;
+}
+
+.shopSidebar {
+
+    .cat-parent {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .children {
+        height: 0;
+        visibility: hidden;
+    }
+
+    .current-cat-parent .children, .current-cat .children, .catOpen .children{
+        height: auto;
+        visibility: visible;
+        margin-top: 15px;
+    }
+    
+    .children li {
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 20px;
+    }
+    
+    .children .current-cat {
+        color: $blue;
+    }
+
+}
+

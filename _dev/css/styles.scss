@@ -1,0 +1,11 @@
+@import "./base/reset.scss";
+@import "./base/core.scss";
+
+/* ------ Layouts ------ */
+@import "./layout/header.scss";
+
+/* ------ Components ------ */
+@import "./components/home/hero.scss";
+
+@import "./base/woocommerce.scss";
+@import "./layout/footer.scss";
