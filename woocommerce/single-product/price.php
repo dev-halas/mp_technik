@@ -22,4 +22,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">
+	<?php 
+		$price_netto = $product->get_price_html(); 
+	 	$price_brutto = woocommerce_price($product->get_price_including_tax());
+	?>
+	<div class="productPrice--netto">
+		<?php echo $price_netto; ?> <small>netto</small>
+	</div>
+	<div class="productPrice--brutto">
+		<?php echo $price_brutto; ?> <small>brutto</small>
+	</div>	
+</p>
+

@@ -2,7 +2,8 @@
 
 require('./js/header');
 require('./js/hero');
-//require('./js/shop');
+require('./js/basketSidebar');
+require('./js/productTabs');
 
 import './css/styles.scss';
 

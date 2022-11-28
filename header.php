@@ -14,7 +14,7 @@
 		<!-- Stylesheets-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="<?php echo THEME_URL ?>public/swiper.css"/>
 		<link rel="stylesheet" href="<?php echo THEME_URL ?>public/main.css">
 	</head>
@@ -48,14 +48,7 @@
 								</svg>
 							</div>
 						</div>
-						<div class="headerShop--basket">
-							<svg xmlns="http://www.w3.org/2000/svg" width="19.34" height="19.34" viewBox="0 0 19.314 19.314">
-								<g id="koszyk_ikona" data-name="koszyk ikona" transform="translate(-1753.757 -77.343)">
-									<path id="shopping-bag" d="M16.9,4.829H14.486a4.829,4.829,0,1,0-9.657,0H2.414A2.414,2.414,0,0,0,0,7.243V15.29a4.029,4.029,0,0,0,4.024,4.024H15.29a4.029,4.029,0,0,0,4.024-4.024V7.243A2.414,2.414,0,0,0,16.9,4.829ZM9.657,1.61a3.219,3.219,0,0,1,3.219,3.219H6.438A3.219,3.219,0,0,1,9.657,1.61ZM17.7,15.29A2.414,2.414,0,0,1,15.29,17.7H4.024A2.414,2.414,0,0,1,1.61,15.29V7.243a.8.8,0,0,1,.8-.8H4.829v1.61a.8.8,0,1,0,1.61,0V6.438h6.438v1.61a.8.8,0,0,0,1.61,0V6.438H16.9a.8.8,0,0,1,.8.8Z" transform="translate(1753.757 77.343)"/>
-								</g>
-							</svg>
-							<span>2</span>
-						</div>
+						<?php get_template_part('/libs/headerBasket'); ?>
 						<button class="hamburger">
 							<span></span>
 							<span></span>
@@ -87,4 +80,5 @@
 				</div>
 			</div>
 		</header>
+		<?php get_template_part('/libs/basketSidebar'); ?>
 		

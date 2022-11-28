@@ -96,7 +96,8 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__(1);
 __webpack_require__(2);
-//require('./js/shop');
+__webpack_require__(4);
+__webpack_require__(5);
 
 
 
@@ -121,10 +122,11 @@ const swiper = new Swiper('.heroSlider', {
     loop: true,
     speed: 500,
     allowTouchMove: true,
-    autoplay: {
+    /*autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
+    */
     
     //change default css classes 
     wrapperClass: 'heroSlider--wrapper',
@@ -133,8 +135,8 @@ const swiper = new Swiper('.heroSlider', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.homeSlide--next',
+        prevEl: '.homeSlide--prev',
     },
 });
 
@@ -145,6 +147,63 @@ const swiper = new Swiper('.heroSlider', {
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+const headerBasket = document.querySelector('.headerShop--basket')
+const basketSidebar = document.querySelector('.basketSidebar--sidebar')
+const basketSidebarBackground = document.querySelector('.basketSidebar--bg')
+const closeSidebar = document.querySelector('.basketSidebar--close')
+
+headerBasket.addEventListener('click', () => {
+    basketSidebar.classList.toggle('--open');
+    basketSidebarBackground.classList.toggle('--open');
+})
+
+closeSidebar.addEventListener('click', () => {
+    basketSidebar.classList.toggle('--open');
+    basketSidebarBackground.classList.toggle('--open');
+})
+
+basketSidebarBackground.addEventListener('click', () => {
+    basketSidebar.classList.toggle('--open');
+    basketSidebarBackground.classList.toggle('--open');
+})
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+const productTabs = document.querySelector('.productTabs')
+
+if(productTabs !== null) {
+    console.log('works')
+
+    const productTabHeader = document.querySelectorAll('.productTab--header')
+    console.log(productTabHeader);
+
+    const productTabContent = document.querySelectorAll('.productTab--content')
+    console.log(productTabContent)
+
+    productTabHeader.forEach((header, index) => {
+        header.addEventListener('click', () => {
+            
+            productTabHeader.forEach(e => {
+                e.classList.remove('--active');
+            })
+
+            productTabContent.forEach(e => {
+                e.classList.remove('--active');
+            })
+
+            header.classList.add('--active')
+            productTabContent[index].classList.add('--active')
+
+        })
+    })
+}
 
 /***/ })
 /******/ ]);

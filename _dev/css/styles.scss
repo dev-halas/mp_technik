@@ -3,9 +3,12 @@
 
 /* ------ Layouts ------ */
 @import "./layout/header.scss";
+@import "./layout/basketSidebar.scss";
 
 /* ------ Components ------ */
 @import "./components/home/hero.scss";
+
+@import "./components/advantages.scss";
 
 @import "./base/woocommerce.scss";
 @import "./layout/footer.scss";

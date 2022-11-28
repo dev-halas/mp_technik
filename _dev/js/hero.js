@@ -2,10 +2,11 @@ const swiper = new Swiper('.heroSlider', {
     loop: true,
     speed: 500,
     allowTouchMove: true,
-    autoplay: {
+    /*autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
+    */
     
     //change default css classes 
     wrapperClass: 'heroSlider--wrapper',
@@ -14,8 +15,8 @@ const swiper = new Swiper('.heroSlider', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.homeSlide--next',
+        prevEl: '.homeSlide--prev',
     },
 });
 

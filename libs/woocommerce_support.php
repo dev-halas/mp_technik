@@ -30,5 +30,29 @@
 		);
 	}
 
+	//reordering single product page 
+
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+    add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
+
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+    add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 0 );
+
+
+	/**
+	 * Remove WooCommerce breadcrumbs 
+	 */
+	add_action( 'init', 'my_remove_breadcrumbs' );
+	
+	function my_remove_breadcrumbs() {
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+	}
+
+	
+
+	
+	
+
+
 
 ?>

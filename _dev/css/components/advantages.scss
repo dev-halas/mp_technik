@@ -1,0 +1,50 @@
+.advantages {
+    position: relative;
+    margin: 50px 0;
+}
+
+.advantages--wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.advantages--col {
+    grid-column: span 1;
+    background: $blue;
+    color: $white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    
+    @include responsive('tablet') {
+        grid-column: span 2;
+    }
+
+    @include responsive('tablet') {
+        grid-column: span 4;
+        aspect-ratio: auto;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.advantages--text {
+    text-align: center;
+    span {
+        font-weight: 600;
+        display: block;
+        margin: 20px 0;
+    }
+
+    p {
+        font-weight: 100;
+    }
+}

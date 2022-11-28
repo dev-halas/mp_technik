@@ -31,7 +31,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<div id="product-<?php the_ID(); ?>" class="singleProduct--wrapper">
 
 	<?php
 	/**
@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="summary entry-summary">
+	<div class="singleProduct--right">
 		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
@@ -60,6 +60,26 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
+
+	<?php 
+		$descriptionTab = get_field('product_decsription');
+	?>
+
+	<div class="productTabs">
+		<div class="productTabs--headers">
+			<div class="productTab--header --active">Opis</div>
+			<div class="productTab--header">Dane techniczne</div>
+			<div class="productTab--header">Video</div>
+		</div>
+		<div class="productTab--contents">
+			<div class="productTab--content --active">
+				<?php echo $descriptionTab; ?>
+			</div>
+			<div class="productTab--content">LOREM IPSUM DOLOR 2</div>
+			<div class="productTab--content">Video</div>
+		</div>
+	</div>
+
 
 	<?php
 	/**
