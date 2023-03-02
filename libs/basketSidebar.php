@@ -11,7 +11,7 @@
             
             <div class="basketSidebar--products">
                 <div class="basketSidebar--nav">
-                    <span>Koszyk</span>
+                    <span>Twój koszyk</span>
                     <div class="basketSidebar--close">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="close"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/></g></g></svg>
                     </div>
@@ -23,7 +23,7 @@
                     $price = get_post_meta($values['product_id'] , '_price', true);
                     $image = wp_get_attachment_url( $_product->get_image_id() );
                 ?>
-                <div class="basketSidebar">
+                <div class="basketSidebar--product">
                     <img class="basketSidebar--img" src="<?php echo $image; ?>" alt="<?php echo $_product->get_title(); ?>">
                     <div class="basketSidebar--details">
                         <a class="basketSidebar--name" href="<?php echo $_product->get_permalink(); ?>">
@@ -53,8 +53,8 @@
 
             </div>
             <div class="basketSidebar--links">
-                <a href="<?php echo esc_url($cart_url); ?>" class="button--white">Zobacz koszyk</a>
-                <a href="<?php echo esc_url(home_url('/')); ?>/zamowienie" class="button--white">Zamówienie</a>
+                <a href="<?php echo esc_url($cart_url); ?>" class="button--blue">Zobacz koszyk</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>/zamowienie" class="buttonDark">Zamówienie</a>
             </div>
             
         </div>

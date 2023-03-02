@@ -27,13 +27,18 @@ if ( $max_value && $min_value === $max_value ) {
 	/* translators: %s: Quantity. */
 	$label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : esc_html__( 'Quantity', 'woocommerce' );
 	?>
-	<div class="quantity">
+	<div class="quantity qtyForm">
 		<?php do_action( 'woocommerce_before_quantity_input_field' ); ?>
 		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
+		<div class="qtyDec">
+			<svg xmlns="http://www.w3.org/2000/svg" width="12.655" height="1.947" viewBox="0 0 12.655 1.947">
+  				<rect id="Rectangle_59" data-name="Rectangle 59" width="1.947" height="12.655" transform="translate(12.655) rotate(90)" fill="#242033"/>
+			</svg>
+		</div>
 		<input
 			type="number"
 			id="<?php echo esc_attr( $input_id ); ?>"
-			class="<?php echo esc_attr( join( ' ', (array) $classes ) ); ?>"
+			class="<?php echo esc_attr( join( ' ', (array) $classes ) ); ?> qtyInput"
 			step="<?php echo esc_attr( $step ); ?>"
 			min="<?php echo esc_attr( $min_value ); ?>"
 			max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
@@ -45,6 +50,11 @@ if ( $max_value && $min_value === $max_value ) {
 			inputmode="<?php echo esc_attr( $inputmode ); ?>"
 			autocomplete="<?php echo esc_attr( isset( $autocomplete ) ? $autocomplete : 'on' ); ?>"
 		/>
+		<div class="qtyInc">
+			<svg xmlns="http://www.w3.org/2000/svg" width="12.655" height="12" viewBox="0 0 12.655 12">
+				<path id="Union_1" data-name="Union 1" d="M-5697.673,12V6.947H-5703V5h5.327V0h2V5h5.327V6.947h-5.327V12Z" transform="translate(5703)" fill="#242033"/>
+			</svg>
+		</div>
 		<?php do_action( 'woocommerce_after_quantity_input_field' ); ?>
 	</div>
 	<?php

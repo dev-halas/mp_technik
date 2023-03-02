@@ -11,6 +11,7 @@
 	require_once THEME_DIR.'libs/woocommerce_support.php';
 	require_once THEME_DIR.'libs/post-types.php';
 	require_once THEME_DIR.'libs/utils.php';
+	//require_once THEME_DIR.'libs/wooCatFilter.php';
 
 
 	//--------------Register menus--------------//
@@ -26,11 +27,8 @@
 
 
 
-	
-
-
-		/* -- ACF REGISTER MENU ---*/
-		if( function_exists('acf_add_options_page') ) {
+	/* -- ACF REGISTER MENU ---*/
+	if( function_exists('acf_add_options_page') ) {
 		
 			acf_add_options_page(array(
 				'page_title' 	=> 'Theme Settings',
@@ -52,8 +50,8 @@
 				'parent_slug'	=> 'theme-general-settings',
 			));
 			
-		}
+	}
+
+	add_filter( 'woocommerce_product_tabs', '__return_empty_array' );
 
 	
-	
-?>

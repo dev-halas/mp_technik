@@ -1,0 +1,55 @@
+.searchBar {
+    visibility: hidden;
+    height: 0;
+    position: fixed;
+}
+
+.searchBar--inner {
+    position: relative;
+    z-index: 100;
+    width: 85%;
+    margin: 0 7.5%;
+    margin-top: 10vh;
+
+    @include responsive('small') {
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 10vh;
+    }
+
+    .dgwt-wcas-search-wrapp {
+        max-width: 100%;
+    }
+
+    .dgwt-wcas-suggestions-wrapp {
+        padding: 15px;
+    }
+    
+    .dgwt-wcas-search-form {
+        max-width: 100%;
+    }
+
+    .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+        font-size: 20px;
+        height: 60px;
+    }
+}
+
+.searchBar.--show {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    z-index: 100;
+}
+
+.searchBar.--show::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+

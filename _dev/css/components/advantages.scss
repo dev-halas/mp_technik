@@ -24,7 +24,7 @@
         grid-column: span 2;
     }
 
-    @include responsive('tablet') {
+    @include responsive('small') {
         grid-column: span 4;
         aspect-ratio: auto;
     }

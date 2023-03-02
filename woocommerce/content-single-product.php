@@ -61,24 +61,37 @@ if ( post_password_required() ) {
 		?>
 	</div>
 
+
 	<?php 
 		$descriptionTab = get_field('product_decsription');
 	?>
 
 	<div class="productTabs">
 		<div class="productTabs--headers">
-			<div class="productTab--header --active">Opis</div>
+			<div class="productTab--header --active">Opis produktu</div>
 			<div class="productTab--header">Dane techniczne</div>
 			<div class="productTab--header">Video</div>
 		</div>
 		<div class="productTab--contents">
 			<div class="productTab--content --active">
+				<?php the_content(); ?>
+			</div>
+			<div class="productTab--content">
 				<?php echo $descriptionTab; ?>
 			</div>
-			<div class="productTab--content">LOREM IPSUM DOLOR 2</div>
-			<div class="productTab--content">Video</div>
+			<div class="productTab--content">
+				<div class="productTab--video">
+					<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/BDwhRWo7cOk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			
 		</div>
 	</div>
+
+	<div class="singleProduct--tags" style="grid-column: span 7;">
+		<?php echo wc_get_product_tag_list( $product->get_id(), ', ', _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ' ); ?> 
+	</div>
+	
 
 
 	<?php

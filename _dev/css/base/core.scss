@@ -92,7 +92,7 @@ body {
 }
 
 
-$container: 85vw;
+$container: 80vw;
 $containerMobile: 90vw;
 
 .container {
@@ -109,6 +109,13 @@ $containerMobile: 90vw;
     background-color: $blue;
     color: $white;
     max-width: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-weight: 800;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .button--white {
@@ -116,11 +123,17 @@ $containerMobile: 90vw;
     background-color: $white;
     color: $blue;
     max-width: fit-content;
+    font-weight: 800;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .button--blue:hover {
-    background-color: $white;
-    color: $blue;
+    background-color: $dark;
+    color: $white;
 }
 
 .button--white:hover {
@@ -134,3 +147,67 @@ $containerMobile: 90vw;
     -o-transition: all .3s ease-in-out;
 }
 
+a.buttonOutline, button.buttonOutline {
+    border: 1px solid $dark;
+    padding: 10px 20px;
+    font-weight: 800;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+a.buttonDark, button.buttonDark {
+    border: 1px solid $dark;
+    padding: 10px 20px;
+    font-weight: 800;
+    display: flex;
+    background-color: $dark;
+    color: $white;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button:disabled {
+    opacity: .9;
+    cursor: not-allowed;
+}
+
+.title--header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+
+    span { 
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    h2 {
+        font-size: clamp(30px, 2vw, 50px);
+        line-height: 1;
+    }
+}
+
+.title--2colors {
+    h2 {
+        font-size: clamp(30px, 3vw, 80px);
+        line-height: 1.2;
+        font-weight: 800;
+    }
+    span {
+        color: $blue;
+    }
+}

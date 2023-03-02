@@ -1,0 +1,21 @@
+.homeAbout {
+    position: relative;
+
+    .title--header{
+        text-align: left;
+        span {
+            color: $blue
+        }
+    }
+}
+
+.homeAbout--wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+
+    p {
+        margin-bottom: 20px;
+    }
+}

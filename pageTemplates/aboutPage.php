@@ -9,7 +9,7 @@
 
     <main>
         
-        <?php //get_template_part('/pageTemplates/products/productsHeader'); ?>
+        <?php get_template_part('/libs/pageHeader'); ?>
         
     </main>
 

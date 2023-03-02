@@ -1,0 +1,25 @@
+.homeProducts {
+    padding: 50px 0;
+}
+
+.homeProducts--wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+
+.homeProducts--header {
+    //display: flex;
+    align-items: center;
+    padding: 50px 0;
+    span {
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: clamp(30px, 2.5vw, 50px);
+        line-height: 1;
+    }
+}

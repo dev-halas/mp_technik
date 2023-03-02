@@ -38,7 +38,9 @@
 					</div>
 				</div>
 				<div class="footerRight">
-					<div class="footerMap"></div>
+					<div class="footerMap">
+						<div id="map"></div>
+					</div>
 					<div class="footerCTA">
 						<div class="footerCTA--icons">
 							<a href="#">
@@ -97,3 +99,5 @@
 
 <script src="<?php echo THEME_URL ?>public/swiper.js"></script>
 <script src="<?php echo THEME_URL ?>public/bundle.js"></script>
+<script src="<?php echo THEME_URL ?>public/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaPiQlYXG53c8H0c9UxK_zT2WZxyPghe0&callback=initMap"></script>

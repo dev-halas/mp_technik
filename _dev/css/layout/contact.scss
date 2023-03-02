@@ -1,0 +1,126 @@
+.contact--wrapper {
+    position: relative;
+}
+
+.contact--cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact--col {
+    grid-column: span 1;
+}
+
+.contact--icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact--icon {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: block;
+        font-weight: 800;
+        color: $dark;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.contact--map {
+    height: 100%;
+    #map {
+        min-height: 100%;
+    }
+}
+
+.cForm {
+    margin-top: 80px;
+}
+
+.contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.contactForm--col {
+    grid-column: span 1;
+    @include responsive('small') {
+        grid-column: span 2;
+    }
+}
+
+.contactForm--full {
+    grid-column: span 2;
+    display: grid;
+    place-items: center;
+
+    p {
+        width: 100%;
+    }
+}
+
+.contactForm {
+
+    font-weight: 200;
+    
+    input[type="text"],input[type="tel"],input[type="email"], textarea {
+        min-width: 100%;
+        padding: 15px 40px;
+        border: 0;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+    
+    .contactForm--submit {
+        background-color: $blue;
+        color: $white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding: 12px 40px;
+        gap: 15px;
+        margin: auto;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+
+    .contactForm--submit:hover {
+        padding: 12px 50px;
+    }
+
+    ::placeholder {
+        color: #8c8c8c;
+    }
+
+    .contactForm--accept {
+        width: 100%;
+        p {
+            font-size: 14px;
+            display: flex;
+            align-self: flex-start;
+            margin-bottom: 15px;
+        }
+    }
+
+    .wpcf7-list-item {
+        margin: 0 12px 0 0;
+    }
+}

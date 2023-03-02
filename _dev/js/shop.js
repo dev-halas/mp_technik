@@ -1,7 +1,7 @@
-const shopCat = document.querySelector('.cat-parent')
-console.log(shopCat)
+/*const filterButton = document.querySelector('.productFilter--button')
+const filters = document.querySelector('.shopSidebar')
 
-
-shopCat.addEventListener('click', () => {
-    shopCat.classList.toggle('catOpen')
+filterButton.addEventListener('click', () => {
+    filters.classList.toggle('--open')
 })
+*/

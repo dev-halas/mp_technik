@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 999;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -20,8 +20,8 @@
     height: 100%;
     width: 500px;
     max-width: 100%;
-    background-color: $blue;
-    color: $white;
+    background-color: $white;
+    color: $dark;
     visibility: hidden;
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
@@ -58,12 +58,15 @@
 .basketSidebar--products {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.basketSidebar {
+.basketSidebar--product {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
 }
 
 .basketSidebar--img {
@@ -75,21 +78,30 @@
     }
 }
 
+.basketSidebar--name {
+    font-size: 14px;
+    line-height: 1.2;
+    display: block;
+}
+
 .basketSidebar--details {
     flex: 1;
 }
 
 .basketSidebar--price {
-    font-size: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .basketSidebar--links {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-direction: column;
 
-    .button--white {
-        width: 50%;
+    .button--blue, .buttonDark {
+        width: 100%;
         max-width: none;
         text-align: center;
 
@@ -102,10 +114,10 @@
 .basketSidebar--nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding: 10px 0 15px 0;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 10px;
 
     span {
         font-size: 20px;
