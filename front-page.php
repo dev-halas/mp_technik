@@ -6,7 +6,8 @@
             get_template_part('/libs/home/homeProducts');
             get_template_part('/libs/home/primaryCategories');
             get_template_part('/libs/home/homeAbout');
-            
+            get_template_part('/libs/home/offer_catalog');
+            get_template_part('/libs/home/articles');
             get_template_part('/libs/home/logoCarousel');
             get_template_part('/libs/advantages');
         ?>

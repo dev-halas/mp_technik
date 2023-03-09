@@ -1,7 +1,7 @@
 <div class="advantages">
     <div class="container">
         <div class="advantages--wrapper">
-            <div class="advantages--col">
+            <div class="advantages--col animate fadeIn d-200">
                 <div>
                     <div class="advantages--icon">
                         <svg id="cpu" xmlns="http://www.w3.org/2000/svg" width="90.4" height="90.4" viewBox="0 0 90.4 90.4">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="advantages--col">
+            <div class="advantages--col animate fadeIn d-200">
                 <div>
                     <div class="advantages--icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="92.52" height="90.4" viewBox="0 0 92.52 90.4">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="advantages--col">
+            <div class="advantages--col animate fadeIn d-200">
                 <div>
                     <div class="advantages--icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80.181" height="90.4" viewBox="0 0 80.181 90.4">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="advantages--col">
+            <div class="advantages--col animate fadeIn d-200">
                 <div>
                     <div class="advantages--icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="89.966" height="90.4" viewBox="0 0 89.966 90.4">

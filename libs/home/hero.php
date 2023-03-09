@@ -12,8 +12,28 @@
                 <a href="#" class="button--white">zobacz więcej</a>
             </div>
         </div>
-        <div class="homeSlider--slide">Slide 2</div>
-        <div class="homeSlider--slide">Slide 3</div>
+        <div class="homeSlider--slide">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero1.jpg" alt="">
+            <div class="homeSlide--inner">
+                <div class="homeSlide--text">
+                    <h1>
+                        <span>Narzędzia </span>wiertnicze HDD
+                    </h1>
+                </div>
+                <a href="#" class="button--white">zobacz więcej</a>
+            </div>
+        </div>
+        <div class="homeSlider--slide">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero1.jpg" alt="">
+            <div class="homeSlide--inner">
+                <div class="homeSlide--text">
+                    <h1>
+                        <span>Narzędzia </span>wiertnicze HDD
+                    </h1>
+                </div>
+                <a href="#" class="button--white">zobacz więcej</a>
+            </div>
+        </div>
     </div>
     
     <div class="swiper-pagination"></div>

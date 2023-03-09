@@ -23,3 +23,12 @@
         line-height: 1;
     }
 }
+
+.homeProducts--more {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .buttonDark {
+        font-weight: 400;
+    }
+}

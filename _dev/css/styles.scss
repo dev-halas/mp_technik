@@ -7,12 +7,14 @@
 @import "./layout/searchBar.scss";
 @import "./layout/basketSidebar.scss";
 @import "./layout/primaryCategories.scss";
+@import "./layout/blog.scss";
 
 /* ------ Components ------ */
 @import "./components/home/hero.scss";
 @import "./components/home/homeProducts.scss";
 @import "./components/home/about.scss";
 @import "./components/home/logoCarousel.scss";
+@import "./components/home/homeCta.scss";
 @import "./components/services/whyUs.scss";
 @import "./components/services/steps.scss";
 @import "./components/services/form.scss";
@@ -22,4 +24,5 @@
 
 @import "./base/woocommerce.scss";
 @import "./layout/contact.scss";
+@import "./base/animations.scss";
 @import "./layout/footer.scss";

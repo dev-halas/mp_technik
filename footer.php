@@ -1,6 +1,6 @@
 </body>
 <?php wp_footer(); ?>
-<footer class="footer">
+<footer class="footer animate fadeInBottomLow d-200">
 	<div class="footerWrapper">
 			<div class="footerInner">
 				<div class="footerLeft">

@@ -1,4 +1,4 @@
-<div class="container homeProducts">
+<div class="container homeProducts animate fadeIn d-200">
     <div class="title--header">
         <span>POPULARNE</span> 
         <h2>produkty</h2>
@@ -28,4 +28,7 @@
         }
         wp_reset_postdata();
     ?>
+    <div class="homeProducts--more">
+        <a href="#" class="buttonDark">Wszytkie produkty</a>
+    </div>
 </div>

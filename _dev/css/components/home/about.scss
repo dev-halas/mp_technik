@@ -1,10 +1,14 @@
 .homeAbout {
     position: relative;
+    background-color: $white;
 
     .title--header{
         text-align: left;
         span {
             color: $blue
+        }
+        h2 {
+            color: $blue;
         }
     }
 }
@@ -14,8 +18,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: center;
+    padding: 50px 0 100px 0;
 
     p {
         margin-bottom: 20px;
+    }
+
+    .button--blue {
+        margin-top: 20px;
+        display: block;
     }
 }

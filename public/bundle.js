@@ -90,7 +90,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
 /* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
 //import Swiper from 'swiper';
 
@@ -100,9 +100,12 @@ __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
-__webpack_require__(9);
-
 __webpack_require__(7);
+
+__webpack_require__(8);
+
+
+__webpack_require__(9);
 
 
 
@@ -239,6 +242,42 @@ filterButton.addEventListener('click', () => {
 /* 7 */
 /***/ (function(module, exports) {
 
+const swiper = new Swiper('.logoCarousel', {
+    loop: true,
+    grabCursor: false,
+    speed: 4000,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    centeredSlides: true,
+    spaceBetween: 30,
+
+    // Responsive breakpoints
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        960: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1300: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+        },
+    },
+});
+
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
 
 const productQuantity = () => {
 
@@ -275,46 +314,34 @@ jQuery(document.body).on('updated_cart_totals removed_from_cart', () => {
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-const swiper = new Swiper('.logoCarousel', {
-    loop: true,
-    grabCursor: false,
-    speed: 4000,
-    allowTouchMove: false,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    centeredSlides: true,
-    spaceBetween: 30,
+    const elements = document.querySelectorAll('.animate');
+    const options = {
+        root: null,
+        threshhold: 0.5,
+        rootMargin: '0px 0px -25% 0px'
+     };
 
-    // Responsive breakpoints
-    breakpoints: {
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                return;
+            }
+            entry.target.classList.add('animated');
+            observer.unobserve(entry.target)
+        })
+    }, options)
 
-        960: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-        },
-        1300: {
-            slidesPerView: 5,
-            spaceBetween: 40,
-        },
-    },
-});
+    elements.forEach(element => observer.observe(element))
 
 
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ })
 /******/ ]);

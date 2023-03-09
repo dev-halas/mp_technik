@@ -10,5 +10,8 @@ require('./js/logoCarousel');
 
 require('./js/qtyWoo');
 
+
+require('./js/observer');
+
 import './css/styles.scss';
 

@@ -9,8 +9,7 @@
 
     <main class="service">
         <?php get_template_part('/libs/pageHeader'); ?>
-        
-        <?php //get_template_part('/pageTemplates/products/productsHeader'); ?>
+    
         
         <div class="services">
             <div class="container">

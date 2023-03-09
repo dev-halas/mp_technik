@@ -1,4 +1,4 @@
-<div class="primaryCategories container">
+<div class="primaryCategories container animate fadeInBottomLow d-200">
     <a href="#" class="primaryCategory">
         <div class="primaryCategory--content primaryCategory--white">
             <small>osprzęt</small>

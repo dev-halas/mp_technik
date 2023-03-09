@@ -2,10 +2,10 @@
     <div class="container">
 
         <div class="homeAbout--wrapper">
-            <div class="homeAbout--img">
+            <div class="homeAbout--img animate fadeIn d-200">
                 <img src="<?php echo THEME_URL; ?>_dev/img/oferta.png" alt="mp-technik o firmie">
             </div>
-            <div class="homgeAbout--content">
+            <div class="homgeAbout--content animate fadeIn d-200">
                 <div class="title--header">
                     <span>mp-technik</span>
                     <h2>kilka słów o nas</h2>
@@ -16,6 +16,7 @@
                 <p>
                     Nieustannie się rozwijamy oraz pragniemy zostać ekspertami w najmniejszym calu w każdej dziedzinie naszej działalności. Świadczymy pełen zakres usług w obszarze przeglądów oraz przeprowadzamy różnego rodzaju renowacje oraz naprawy m.in. urządzeń do przecisków, młotów do wbijania rur stalowych, kompresorów i wciągarek linowych.
                 </p>
+                <a href="#" class="button--blue">czytaj więcej</a>
             </div>
         </div>
 
