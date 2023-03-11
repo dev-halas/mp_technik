@@ -1,0 +1,100 @@
+.about {
+    .container {
+        width: min(70%,1600px)
+    }
+
+    .pageHeader h2 {
+        color: $blue;
+    }
+
+    h2 {
+        font-size: clamp(32px, 3vw, 72px);
+        line-height: 1.2;
+        color: $blue;
+    }
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.about-wrapper {
+    width: 100vw;
+    margin: auto;
+}
+
+.about-text-icons {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.about-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-weight: 700;
+        margin-top: 25px;
+    }
+}
+
+.about-images {
+    width: 90%;
+    margin: auto;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.about-experience {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.about-knowledge {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.about-knowledge-title {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+
+    h2 {
+        color: $dark;
+    }
+}
+
+.about-knowledge--bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .contact-btn {
+        padding: 10px 50px;
+        background-color: $blue;
+        color: $white;
+    }
+}

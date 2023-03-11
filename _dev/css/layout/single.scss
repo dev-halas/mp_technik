@@ -1,0 +1,113 @@
+.single-wrapper {
+    width: 90vw;
+    margin: auto;
+}
+
+.single-img {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    @include responsive('tablet') {
+        max-width: 90vw;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.single-text {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.single-product-info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.product-info-img {
+    width: 100%;
+    margin: auto;
+    mix-blend-mode: multiply;
+    margin-bottom: 50px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.product-info-text {
+    h4 {
+        margin-bottom: 25px;
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+}
+
+.single-social-img {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: multiply;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.single-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 25px;
+
+    .single-image {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.single-images--bottom {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    padding: 10px 50px;
+    background-color: $blue;
+    color: $white;
+}
+
+.single {
+    .container {
+        width: 100%;
+    }
+}
