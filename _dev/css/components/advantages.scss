@@ -9,6 +9,14 @@
     gap: 20px;
 }
 
+.advantages-transition {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
 .advantages--col {
     grid-column: span 1;
     background: $blue;
@@ -19,6 +27,7 @@
     align-items: center;
     justify-content: center;
     aspect-ratio: 1 / 1;
+    @extend .advantages-transition;
     
     @include responsive('tablet') {
         grid-column: span 2;
@@ -34,6 +43,20 @@
         flex-direction: column;
         align-items: center;
     }
+
+    &:hover {
+        background: $white;
+        cursor: default;
+        @extend .advantages-transition;
+
+        span, svg {
+            color: $blue;
+        }
+
+        p {
+            color: $dark;
+        }
+    }
 }
 
 .advantages--text {
@@ -42,9 +65,5 @@
         font-weight: 600;
         display: block;
         margin: 20px 0;
-    }
-
-    p {
-        font-weight: 100;
     }
 }
