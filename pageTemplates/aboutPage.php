@@ -43,10 +43,22 @@
             </div>
             <div class="about-images">
                 <div class="about-image">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/working-area-modern-office.jpg" alt="nowoczesne biuro">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/minimalist-empty-room.jpg" alt="minimalistyczne pomieszczenie">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/mptechnik-product.jpg" alt="sprężarka-kompresor">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/large-modern-warehouse-building.jpg" alt="nowoczesna hala">
+                    <div class="about-image-parent">
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/working-area-modern-office.jpg" alt="nowoczesne biuro">
+                        </div>
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/minimalist-empty-room.jpg" alt="minimalistyczne pomieszczenie">
+                        </div>
+                    </div>
+                    <div class="about-image-parent">
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/mptechnik-product.jpg" alt="sprężarka-kompresor">
+                        </div>
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/large-modern-warehouse-building.jpg" alt="nowoczesna hala">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="about-experience">

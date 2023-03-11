@@ -1,8 +1,19 @@
 <?php get_header(); ?>
+    <header class="single-header">
+        <div class="pageHeader">
+            <div class="pageHeader--accent"></div>
+                <div class="container pageHeader--inner single-header-container">
+                    <span class="single-header-date">10.08.2022</span>
+                    <h2>
+                        Dostawa zestawu do przecisków HH 2,5″ RHSR
+                        z kompresorem ATMOS PB81E
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main id="single" class="single">
-        <?php get_template_part('/libs/pageHeader'); ?>
-
         <section class="single-wrapper">
             <div class="single-img">
                 <img src="<?php echo THEME_URL; ?>_dev/img/event.jpg" alt="wydarzenie">
@@ -14,55 +25,78 @@
             </div>
 
             <div class="single-product-info">
-                <div class="product-info--left">
-                    <div class="product-info-img">
-                        <img src="<?php echo THEME_URL; ?>_dev/img/product-info.jpg" alt="HAMMERHEAD 4">
-                    </div>
-                    <div class="product-info-text">
-                        <h4>Dane techniczne</h4>
-                        <p>model: HAMMERHEAD 4”</p>
-                        <p>średnica przecisku : 98 mm (z poszerzeniem 180 mm)</p>
-                        <p>długość przecisku : 1624 mm</p>
-                        <p>waga : 62 kg</p>
-                        <p>pasywna głowica przecisku</p>
-                        <p>zapotrzebowanie na powietrze : 1926 L/min</p>
-                        <p>ciśnienie robocze :7,6 bar</p>
-                        <p>praca: przód/tył, zmiana kierunku przez obrót węża</p>
-                    </div>
+                <div class="product-info-img first-img">
+                    <img src="<?php echo THEME_URL; ?>_dev/img/product-info.jpg" alt="HAMMERHEAD 4">
                 </div>
-                <div class="product-info--right">
-                    <div class="product-info-img">
-                        <img src="<?php echo THEME_URL; ?>_dev/img/event-product-info.jpg" alt="wydarzenie">
-                    </div>
-                    <div class="product-info-text">
-                        <h4>W skład zestawu wchodzi</h4>
-                        <p>maszyna przeciskowa HAMMERHEAD 2,5” (67mm)</p>
-                        <p>wąż roboczy 3/4″ X 15 M</p>
-                        <p>oliwiarka</p>
-                        <p>zestaw kluczy</p>
-                        <p>przyrząd do ustawiania maszyny</p>
-                        <p>olej do maszyn przeciskowych</p>
-                    </div>
+                <div class="product-info-text first-text">
+                    <h4>Dane techniczne</h4>
+                    <p>model: HAMMERHEAD 4”</p>
+                    <p>średnica przecisku : 98 mm (z poszerzeniem 180 mm)</p>
+                    <p>długość przecisku : 1624 mm</p>
+                    <p>waga : 62 kg</p>
+                    <p>pasywna głowica przecisku</p>
+                    <p>zapotrzebowanie na powietrze : 1926 L/min</p>
+                    <p>ciśnienie robocze :7,6 bar</p>
+                    <p>praca: przód/tył, zmiana kierunku przez obrót węża</p>
+                </div>
+                <div class="product-info-img second-img">
+                    <img src="<?php echo THEME_URL; ?>_dev/img/event-product-info.jpg" alt="wydarzenie">
+                </div>
+                <div class="product-info-text second-text">
+                    <h4>W skład zestawu wchodzi</h4>
+                    <p>maszyna przeciskowa HAMMERHEAD 2,5” (67mm)</p>
+                    <p>wąż roboczy 3/4″ X 15 M</p>
+                    <p>oliwiarka</p>
+                    <p>zestaw kluczy</p>
+                    <p>przyrząd do ustawiania maszyny</p>
+                    <p>olej do maszyn przeciskowych</p>
                 </div>
             </div>
             <div class="single-social-img">
-                <img src="<?php echo THEME_URL; ?>_dev/img/post-1.jpg" alt="Hammerhead 2.5 post">
-                <img src="<?php echo THEME_URL; ?>_dev/img/post-2.jpg" alt="Terma max K130S post">
+                <div>
+                    <img src="<?php echo THEME_URL; ?>_dev/img/post-1.jpg" alt="Hammerhead 2.5 post">
+                </div>
+                <div>
+                    <img src="<?php echo THEME_URL; ?>_dev/img/post-2.jpg" alt="Terma max K130S post">
+                </div>
             </div>
             <div class="single-images">
                 <div class="single-image">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
+                    <div class="single-image-parent">
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
+                        </div>
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
+                        </div>
+                    </div>
+                    <div class="single-image-parent">
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
+                        </div>
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
+                        </div>
+                    </div>
                 </div>
                 <div class="single-image">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
+                    <div class="single-image-parent">
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
+                        </div>
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
+                        </div>
+                    </div>
+                    <div class="single-image-parent">
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-1.jpg" alt="dyskusja">
+                        </div>
+                        <div>
+                            <img src="<?php echo THEME_URL; ?>_dev/img/single-photo-2.jpg" alt="wykopalisko">
+                        </div>
+                    </div>
                 </div>
-
                 <div class="single-images--bottom">
                     <a href = "<?php echo esc_url(home_url('/aktualnosci')) ?>" class="back-btn">
                         <span>wróć</span>
