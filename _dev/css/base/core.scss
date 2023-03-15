@@ -212,3 +212,8 @@ button:disabled {
         display: block;
     }
 }
+
+.fullImage { 
+    min-width: 100%;
+    object-fit: cover;
+}

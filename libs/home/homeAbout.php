@@ -3,7 +3,7 @@
 
         <div class="homeAbout--wrapper">
             <div class="homeAbout--img animate fadeIn d-200">
-                <img src="<?php echo THEME_URL; ?>_dev/img/oferta.png" alt="mp-technik o firmie">
+                <img src="<?php echo THEME_URL; ?>_dev/img/spawanie1.jpg" alt="mp-technik o firmie">
             </div>
             <div class="homgeAbout--content animate fadeIn d-200">
                 <div class="title--header">
