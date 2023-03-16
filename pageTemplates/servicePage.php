@@ -13,7 +13,7 @@
         
         <div class="services">
             <div class="container">
-                <div class="service--item">
+                <div class="service--item" id="maszyny_przeciskowe">
                     <div class="service--img">
                         <img src="<?php echo THEME_URL; ?>_dev/img/serwis/serwis_maszyn_przeciskowych.jpg" alt="">
                     </div>
@@ -24,7 +24,7 @@
                         <p>Serwisujemy maszyny wszystkich marek, m.in. produkcji Niemieckiej, Polskiej, Szwajcarskiej, Ukraińskiej, Amerykańskiej.</p>
                     </div>
                 </div>
-                <div class="service--item">
+                <div class="service--item" id="wciagarki_kablowe">
                     <div class="service--text">
                         <h2>serwis przyczep <br/><span>i wciągarek kablowych</span></h2>
                         <p>Oferujemy szeroki wachlarz usług w zakresie napraw i przeglądów przyczep i wciągarek linowych. Wykonujemy przeglądy maszyn, naprawy gwarancyjne, pogwarancyjne oraz dostarczamy części zamienne. Z naszego doświadczenia korzystają często również Klienci, którzy posiadają maszyny różnych marek m.in. Bagela, Thaler, Wamet, OMAC, Volta-Macchine.</p>
@@ -33,7 +33,7 @@
                         <img src="<?php echo THEME_URL; ?>_dev/img/serwis/serwis_przyczep_wciagarek_kablowych.jpg" alt="serwis przyczep i wciągarek kablowych">
                     </div>
                 </div>
-                <div class="service--item">
+                <div class="service--item" id="kompresory">
                     <div class="service--img">
                         <img src="<?php echo THEME_URL; ?>_dev/img/serwis/serwis_maszyn_przeciskowych.jpg" alt="">
                     </div>

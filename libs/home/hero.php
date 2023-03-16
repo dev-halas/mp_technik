@@ -2,11 +2,11 @@
 <div class="heroSlider">
     <div class="heroSlider--wrapper">
         <div class="homeSlider--slide">
-            <img src="<?php echo THEME_URL; ?>_dev/img/hero1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero/slider1.jpg" alt="">
             <div class="homeSlide--inner">
                 <div class="homeSlide--text">
                     <h1>
-                        <span>Narzędzia </span>wiertnicze HDD
+                        <span>Maszyny </span>do przecisków
                     </h1>
                 </div>
                 <a href="#" class="button--white">zobacz więcej</a>
@@ -24,11 +24,22 @@
             </div>
         </div>
         <div class="homeSlider--slide">
-            <img src="<?php echo THEME_URL; ?>_dev/img/hero1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero/wind_farm.jpg" alt="">
             <div class="homeSlide--inner">
                 <div class="homeSlide--text">
                     <h1>
-                        <span>Narzędzia </span>wiertnicze HDD
+                        <span>Maszyny i akcesoria</span>do układania kabli 
+                    </h1>
+                </div>
+                <a href="#" class="button--white">zobacz więcej</a>
+            </div>
+        </div>
+        <div class="homeSlider--slide">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero/dipper.jpg" alt="">
+            <div class="homeSlide--inner">
+                <div class="homeSlide--text">
+                    <h1>
+                        <span>DIPPERFOX </span>frezarki do pni 
                     </h1>
                 </div>
                 <a href="#" class="button--white">zobacz więcej</a>
