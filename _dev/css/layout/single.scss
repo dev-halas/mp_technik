@@ -150,34 +150,29 @@
     }
 }
 
+.single-gallery-container {
+    max-width: min(90%, 1600px);
+    margin: auto;
+}
+
 .single-images {
     width: 100%;
     margin: auto;
     gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
-    @include responsive('tablet') {
-        width: 90%;
+    @include responsive('small') {
+        flex-direction: column;
     }
 
     .single-image {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-
-        @include responsive('small') {
-            flex-direction: column;
-        }
-    }
-
-    .single-image-parent {
-        display: flex;
-        gap: 25px;
+        flex: calc(25% - 25px);
     }
 
     img {
         object-fit: cover;
-        margin-bottom: 25px;
     }
 }
 

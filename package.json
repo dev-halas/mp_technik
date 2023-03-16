@@ -12,6 +12,7 @@
     "license": "ISC",
     "description": "",
     "dependencies": {
+        "lightgallery": "^2.7.1",
         "sass": "^1.58.3",
         "swiper": "^8.4.4"
     },

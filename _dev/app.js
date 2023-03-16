@@ -7,6 +7,7 @@ require('./js/basketSidebar');
 require('./js/productTabs');
 require('./js/shop');
 require('./js/logoCarousel');
+require('./js/lightGallery');
 
 require('./js/qtyWoo');
 
