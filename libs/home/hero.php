@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="homeSlider--slide">
-            <img src="<?php echo THEME_URL; ?>_dev/img/hero1.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero/hdd-drill.jpg" alt="">
             <div class="homeSlide--inner">
                 <div class="homeSlide--text">
                     <h1>
