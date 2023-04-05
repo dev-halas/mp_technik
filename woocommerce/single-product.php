@@ -37,7 +37,7 @@ get_header( 'shop' ); ?>
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
-
+		<?php get_template_part('/libs/home/primaryCategories'); ?>
 	<?php
 		/**
 		 * woocommerce_after_main_content hook.
@@ -46,6 +46,8 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
+
+	
 
 <?php
 get_footer( 'shop' );

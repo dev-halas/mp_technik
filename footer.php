@@ -8,6 +8,8 @@
 						<div class="footer--item">
 							<span>Dane kontaktowe</span>
 							<p>
+								MP-TECHNIK Sp. z o.o.<br/>
+								NIP: 6172222327<br/>
 								Witaszyczki 26,<br/>
 								63-230 Witaszyce
 							</p>
@@ -93,6 +95,10 @@
 		</div>
 	</div>
 	<div class="footer--copyright"></div>
+	<svg xmlns="http://www.w3.org/2000/svg" width="7.728" height="7.728" viewBox="0 0 7.728 7.728">
+		<path id="Path_23" data-name="Path 23" d="M3.84,52.763,7.728,50.4,5.366,54.24l2.363,3.889L3.84,55.766,0,58.128,2.363,54.24,0,50.4Z" transform="translate(0 -50.4)" fill="red"/>
+	</svg>
+
 </footer>
     
 <!-- Javascript-->

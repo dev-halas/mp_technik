@@ -96,7 +96,7 @@ $container: 80vw;
 $containerMobile: 90vw;
 
 .container {
-    width: MIN($container, 1600px);
+    width: $container;
     margin: 0 auto;
     position: relative;
     @include responsive('tablet') {

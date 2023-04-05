@@ -79,7 +79,8 @@
                                     <p>
                                         <strong>
                                             Witaszyczki 26,<br/>
-                                            63-230 Witaszyce
+                                            63-230 Witaszyce<br/>
+                                            MP-TECHNIK Sp. z o.o.
                                         </strong>
                                     </p>
                                     <p>

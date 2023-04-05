@@ -93,19 +93,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
 /* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
 //import Swiper from 'swiper';
-
 __webpack_require__(1);
 __webpack_require__(2);
 __webpack_require__(3);
 __webpack_require__(4);
 __webpack_require__(5);
 __webpack_require__(6);
-__webpack_require__(7);
 __webpack_require__(11);
-
+__webpack_require__(7);
 __webpack_require__(8);
-
-
 __webpack_require__(9);
 
 
@@ -114,35 +110,6 @@ __webpack_require__(9);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-const header = document.querySelector('.header')
-const hamburger = document.querySelector('.hamburger')
-const headerLinks = document.querySelectorAll('.header li:not(.menu-item-has-children)')
-const headerLinks_withChildren = document.querySelectorAll('.header li:has(.sub-menu)')
-
-console.log(headerLinks_withChildren)
-
-hamburger.addEventListener('click', () => {
-    header.classList.toggle('--active')
-})
-
-headerLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        header.classList.remove('--active')
-    })
-})
-
-headerLinks_withChildren.forEach(link_children => {
-    link_children.addEventListener('click', () => {
-        link_children.classList.toggle('show-subMenu')
-    })
-})
-
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 const swiper = new Swiper('.heroSlider', {
@@ -170,7 +137,7 @@ const swiper = new Swiper('.heroSlider', {
 
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports) {
 
 const searchBarButton = document.querySelector('.headerShop--searchIcon')
@@ -189,7 +156,7 @@ closeSearchBar.addEventListener('click', () => {
 })
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 const headerBasket = document.querySelector('.headerShop--basket')
@@ -213,7 +180,7 @@ basketSidebarBackground.addEventListener('click', () => {
 })
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 const productTabs = document.querySelector('.productTabs')
@@ -246,7 +213,7 @@ if(productTabs !== null) {
 }
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*const filterButton = document.querySelector('.productFilter--button')
@@ -258,7 +225,7 @@ filterButton.addEventListener('click', () => {
 */
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 const swiper = new Swiper('.logoCarousel', {
@@ -294,7 +261,7 @@ const swiper = new Swiper('.logoCarousel', {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
 
 
@@ -333,7 +300,7 @@ jQuery(document.body).on('updated_cart_totals removed_from_cart', () => {
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
 
     const elements = document.querySelectorAll('.animate');
@@ -354,6 +321,33 @@ jQuery(document.body).on('updated_cart_totals removed_from_cart', () => {
     }, options)
 
     elements.forEach(element => observer.observe(element))
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+const header = document.querySelector('.header')
+const hamburger = document.querySelector('.hamburger')
+const headerLinks = document.querySelectorAll('.header li:not(.menu-item-has-children)')
+const headerLinks_withChildren = document.querySelectorAll('.header li:has(.sub-menu)')
+
+hamburger.addEventListener('click', () => {
+    header.classList.toggle('--active')
+})
+
+headerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        header.classList.remove('--active')
+    })
+})
+
+headerLinks_withChildren.forEach(link_children => {
+    link_children.addEventListener('click', () => {
+        link_children.classList.toggle('show-subMenu')
+    })
+})
+
 
 
 /***/ }),

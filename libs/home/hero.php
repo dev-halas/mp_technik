@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="homeSlider--slide">
-            <img src="<?php echo THEME_URL; ?>_dev/img/hero/hdd-drill.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero/hdd-drill-1.jpg" alt="" style="object-position: top;">
             <div class="homeSlide--inner">
                 <div class="homeSlide--text">
                     <h1>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="homeSlider--slide">
-            <img src="<?php echo THEME_URL; ?>_dev/img/hero/wind_farm.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>_dev/img/hero/slider_energy_small.jpg" alt="" style="object-position: 50% 75%">
             <div class="homeSlide--inner">
                 <div class="homeSlide--text">
                     <h1>

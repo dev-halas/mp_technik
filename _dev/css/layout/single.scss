@@ -190,9 +190,3 @@
     background-color: $blue;
     color: $white;
 }
-
-.single {
-    .container:not(.single-header-container) {
-        width: 100%;
-    }
-}
