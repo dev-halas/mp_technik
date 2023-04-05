@@ -45,18 +45,18 @@
                 <div class="about-image">
                     <div class="about-image-parent">
                         <div>
-                            <img src="<?php echo THEME_URL; ?>_dev/img/working-area-modern-office.jpg" alt="nowoczesne biuro">
+                            <img src="<?php echo THEME_URL; ?>_dev/img/onas/onas1.jpg" alt="nowoczesne biuro">
                         </div>
                         <div>
-                            <img src="<?php echo THEME_URL; ?>_dev/img/minimalist-empty-room.jpg" alt="minimalistyczne pomieszczenie">
+                            <img src="<?php echo THEME_URL; ?>_dev/img/onas/onas2.jpeg" alt="minimalistyczne pomieszczenie">
                         </div>
                     </div>
                     <div class="about-image-parent">
                         <div>
-                            <img src="<?php echo THEME_URL; ?>_dev/img/mptechnik-product.jpg" alt="sprężarka-kompresor">
+                            <img src="<?php echo THEME_URL; ?>_dev/img/onas/onas3.jpg" alt="sprężarka-kompresor">
                         </div>
                         <div>
-                            <img src="<?php echo THEME_URL; ?>_dev/img/large-modern-warehouse-building.jpg" alt="nowoczesna hala">
+                            <img src="<?php echo THEME_URL; ?>_dev/img/onas/onas4.jpg" alt="nowoczesna hala">
                         </div>
                     </div>
                 </div>
@@ -70,26 +70,7 @@
                     <p>Posiadamy wieloletnie doświadczenie oraz szeroką wiedzę specjalistyczną. Liczne certyfikaty czołowych instytutów oraz ośrodków badawczo – szkoleniowych są najlepszym oraz zauważalnym potwierdzeniem naszych kompetencji. Niewątpliwie zależy nam na dobru Klienta, dlatego produkty proponowane naszym konsumentom spełniają najwyższe panujące normy. Zachęcamy do skorzystania z ofert firmy MP-TECHNIK, a następnie wypełnienia formularzu zgłoszeniowego, który znajduje się w kontakcie.</p>
                 </div>
             </div>
-            <div class="about-knowledge">
-                <div class="about-knowledge-title">
-                    <h2 class="mb-100">
-                        specjalistyczna
-                        <div>wiedza</div>
-                    </h2>
-                </div>
-                <div class="about-image">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/certificate-1.jpg" alt="certyfikat ukończenia kursu kwalifikującego">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/certificate-2.jpg" alt="certyfikat ukończenia kursu rachunkowości">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/certificate-1.jpg" alt="certyfikat ukończenia kursu kwalifikującego">
-                    <img src="<?php echo THEME_URL; ?>_dev/img/certificate-2.jpg" alt="certyfikat ukończenia kursu rachunkowości">
-                </div>
-                <div class="about-knowledge--bottom">
-                    <a href = "#" class="contact-btn">
-                        <span>kontakt</span>
-                    </a>
-                </div>
-            </div>
-
+            
             <?php get_template_part('/libs/advantages'); ?>
         </section>
         

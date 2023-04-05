@@ -3,8 +3,6 @@ const hamburger = document.querySelector('.hamburger')
 const headerLinks = document.querySelectorAll('.header li:not(.menu-item-has-children)')
 const headerLinks_withChildren = document.querySelectorAll('.header li:has(.sub-menu)')
 
-console.log(headerLinks_withChildren)
-
 hamburger.addEventListener('click', () => {
     header.classList.toggle('--active')
 })
